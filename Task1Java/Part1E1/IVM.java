@@ -54,6 +54,10 @@ public class IVM {
     public static void main(String[] args) {
         IVM ivmExample = new IVM();
         ivmExample.addProduct(1, "abc", 2, 34f);
+        ivmExample.addProduct(2, "qrs", 1, 34f);
+        ivmExample.addProduct(3, "xyz", 2, 34f);
+        ivmExample.updateProduct(2, "qrst", 3, 34f);
+        ivmExample.deleteProduct(3);
         ivmExample.printProducts();
     }
 }
@@ -67,4 +71,3 @@ public class IVM {
 //Inserting takes O(1) time complexity 
 //Accessing elements in arraylist takes O(1) time complexity, as the product can be accessed using key which is the product id
 //Deleting product also takes O(1) time cmplexity as key is present
-c
