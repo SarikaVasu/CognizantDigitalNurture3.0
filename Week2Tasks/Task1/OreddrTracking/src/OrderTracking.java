@@ -1,0 +1,16 @@
+import java.util.LinkedList;
+
+public class OrderTracking {
+    private LinkedList<Order> orders = new LinkedList<Order>();
+    public void addOrder(Order order) {
+        orders.add(order);
+    }
+    public Order processOrder() {
+        return orders.poll();
+    }
+    public void displayOrders() {
+        for (Order order : orders) {
+            System.out.println(order);
+        }
+    }
+}
