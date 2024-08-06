@@ -15,8 +15,10 @@ public class EmployeeManagement {
         return null;
     }
     public void displayEmployees() {
-        for(Employee emp : employees) {
-            System.out.println(emp);
+        if(!employees.isEmpty()) {
+            for(Employee emp : employees) {
+                System.out.println(emp);
+            }
         }
     }
 }

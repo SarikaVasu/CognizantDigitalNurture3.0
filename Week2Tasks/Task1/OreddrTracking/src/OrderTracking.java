@@ -6,11 +6,16 @@ public class OrderTracking {
         orders.add(order);
     }
     public Order processOrder() {
-        return orders.poll();
+        if(!orders.isEmpty()) {
+            return orders.poll();
+        }
+        return null;
     }
     public void displayOrders() {
-        for (Order order : orders) {
-            System.out.println(order);
+        if(!orders.isEmpty()) {
+            for (Order order : orders) {
+                System.out.println(order);
+            }
         }
     }
 }

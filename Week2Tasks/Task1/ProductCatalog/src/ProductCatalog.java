@@ -6,12 +6,16 @@ public class ProductCatalog {
         products.add(productName);
     }
     public void removeProduct(String productName) {
-        products.remove(productName);
+        if(products.contains(productName)) {
+            products.remove(productName);
+        }
     }
     public boolean searchProduct(String productName) {
         return products.contains(productName);
     }
     public void displayProducts() {
-        System.out.println(products);
+        if(!products.isEmpty())  {
+            System.out.println(products);
+        }
     }
 }

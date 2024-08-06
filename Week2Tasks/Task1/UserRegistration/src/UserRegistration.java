@@ -6,9 +6,13 @@ public class UserRegistration {
         users.add(userName);
     }
     public void removeuser(String userName) {
-        users.remove(userName);
+        if(!users.contains(userName))  {
+            users.remove(userName);
+        }
     }
     public void displayUsers() {
-        System.out.println(users);
+        if(!users.isEmpty())  {
+            System.out.println(users);
+        }
     }
 }

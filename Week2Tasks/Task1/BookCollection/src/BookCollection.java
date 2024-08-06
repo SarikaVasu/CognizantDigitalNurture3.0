@@ -6,9 +6,13 @@ public class BookCollection {
         books.add(bookTitle);
     }
     public void removeBook(String bookTitle) {
-        books.remove(bookTitle);
+        if(books.contains(bookTitle)) {
+            books.remove(bookTitle);
+        }
     }
     public void displayBooks() {
-        System.out.println(books);
+        if(!books.isEmpty())  {
+            System.out.println(books);
+        }
     }
 }

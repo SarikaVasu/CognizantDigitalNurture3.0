@@ -7,11 +7,13 @@ public class CustomerAccounts {
         customers.put(customer.getId(), customer);
     }
     public Customer removeCustomer(int customerId) {
-        return customers.remove(customerId);
+            return customers.remove(customerId);
     }
     public void displayCustomers() {
-        for(Map.Entry<Integer, Customer> customerEntry : customers.entrySet()) {
-            System.out.println(customerEntry.getValue());
+        if(!customers.isEmpty()) {
+            for(Map.Entry<Integer, Customer> customerEntry : customers.entrySet()) {
+                System.out.println(customerEntry.getValue());
+            }
         }
     }
 }
