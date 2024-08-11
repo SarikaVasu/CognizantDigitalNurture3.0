@@ -10,8 +10,14 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
+    public void findBooks() {
+        System.out.println("Finding books....");
+        bookRepository.getAllBooks();
+    }
+
     public void performService() {
         System.out.println("Performing service...");
         bookRepository.performRepositoryTask();
     }
+
 }

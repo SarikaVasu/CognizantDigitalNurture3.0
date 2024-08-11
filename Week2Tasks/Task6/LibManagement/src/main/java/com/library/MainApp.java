@@ -13,7 +13,8 @@ public class MainApp {
         // Retrieve the BookService bean from the application context
         BookService bookService = (BookService) context.getBean("bookService");
 
+
         // Call the service method
-        bookService.performService();
+        bookService.findBooks();
     }
 }

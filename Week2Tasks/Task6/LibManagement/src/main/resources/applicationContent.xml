@@ -8,6 +8,7 @@
 
     <!-- Bean definition for BookService -->
     <bean id="bookService" class="com.library.service.BookService">
+        <!-- Wiring BookRepository into BookService using setter injection -->
         <property name="bookRepository" ref="bookRepository" />
     </bean>
 

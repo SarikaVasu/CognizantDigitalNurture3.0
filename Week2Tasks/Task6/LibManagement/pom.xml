@@ -35,5 +35,6 @@
         </dependency>
 
     </dependencies>
+<!--    click on resolve maven to resolve dep issue, this appears when u paste dependencies-->
 
 </project>
