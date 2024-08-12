@@ -8,6 +8,13 @@
 	<name>LibraryManagement</name>
 	<description>Library Management System</description>
 
+<!--	<parent>-->
+<!--		<groupId>org.springframework.boot</groupId>-->
+<!--		<artifactId>spring-boot-starter-parent</artifactId>-->
+<!--		<version>3.1.4</version> &lt;!&ndash; Specify your Spring Boot version here &ndash;&gt;-->
+<!--		<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+<!--	</parent>-->
+
 	<properties>
 		<java.version>21</java.version>
 		<spring-boot.version>3.3.0</spring-boot.version> <!-- Use a stable version compatible with Java 21 -->
@@ -18,10 +25,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>${spring-boot.version}</version>
+			<version>3.3.0</version>
 		</dependency>
 
 		<!-- Spring Boot Starter Data JPA -->
+
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
