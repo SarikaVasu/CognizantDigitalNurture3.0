@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0bf62b77-c0a6-4aa0-bc4a-5b45226b4444" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/entity/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/repository/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/repository/DepartmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SB/EmpManSys/EmpManSys/src/main/java/com/empManagement/EmpManSys/repository/EmployeeRepository.java" afterDir="false" />
     </list>
