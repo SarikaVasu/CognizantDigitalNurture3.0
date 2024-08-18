@@ -27,13 +27,13 @@ public class DepartmentController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Department> getDepartmentById(@PathVariable int id) {
+    public ResponseEntity<Department> getDepartmentById(@PathVariable Integer id) {
         Optional<Department> department = departmentRepo.findById(id);
         return department.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Department> updateDepartment(@PathVariable int id, @RequestBody Department departmentDetails) {
+    public ResponseEntity<Department> updateDepartment(@PathVariable Integer id, @RequestBody Department departmentDetails) {
         Optional<Department> department = departmentRepo.findById(id);
         if (department.isPresent()) {
             Department updatedDepartment = department.get();
@@ -46,7 +46,7 @@ public class DepartmentController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteDepartment(@PathVariable int id) {
+    public ResponseEntity<Void> deleteDepartment(@PathVariable Integer id) {
         if (departmentRepo.existsById(id)) {
             departmentRepo.deleteById(id);
             return ResponseEntity.noContent().build();
