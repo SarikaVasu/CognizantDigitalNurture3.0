@@ -1,6 +1,9 @@
 package com.empManagement.EmpManSys.repository;
 
+import com.empManagement.EmpManSys.dto.EmployeeCustomDTO;
+import com.empManagement.EmpManSys.dto.EmployeeNameEmailDTO;
 import com.empManagement.EmpManSys.entity.Employee;
+import com.empManagement.EmpManSys.projection.EmployeeNameEmailProjection;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -44,5 +47,17 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     //GET localhost:8080/employees/paginated?name=John&page=0&size=5&sort=email,desc
     Page<Employee> findByNameContaining(String name, Pageable pageable);
 
+
+    //projection
+    List<EmployeeNameEmailProjection> findAllProjectedBy();
+
+    //class based projection
+    //custom query to map the results
+    @Query("SELECT new com.empManagement.EmpManSys.dto.EmployeeNameEmailDTO(e.name, e.email) FROM Employee e")
+    List<EmployeeNameEmailDTO> findEmployeeNameEmail();
+
+    //custom query to map the results to the EmployeeCustomDTO
+    @Query("SELECT new com.empManagement.EmpManSys.dto.EmployeeCustomDTO(e.name, e.email, e.department.name) FROM Employee e")
+    List<EmployeeCustomDTO> findEmployeeCustomData();
 
 }
